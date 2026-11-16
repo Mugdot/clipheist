@@ -76,7 +76,7 @@
 </footer>
 <script>
 // Address of the checkout server. Leave empty until it is online: the buy button then shows "opening soon".
-const CHECKOUT_SERVER = '';
+const CHECKOUT_SERVER = 'https://clipheist-site.onrender.com';
 const form = document.getElementById('buyform'), btn = document.getElementById('buybtn');
 if (CHECKOUT_SERVER) form.action = CHECKOUT_SERVER.replace(/\/$/, '') + '/buy';
 else { btn.disabled = true; btn.textContent = 'Checkout opening soon'; btn.style.cssText = 'filter:grayscale(1);opacity:.6;cursor:not-allowed'; form.addEventListener('submit', (e) => e.preventDefault()); }
